@@ -4,12 +4,12 @@ var kilometri, eta;
 do {
     kilometri = prompt("Quanti kilometri vuoi percorrere?");
 }
-while (isNaN(kilometri) == true || kilometri == "");
+while (isNaN(kilometri) || kilometri == "" || kilometri < 1);
 
 do {
     eta = prompt("Quanti anni hai?");
 }
-while (isNaN(eta) == true || eta == "");
+while (isNaN(eta) || eta == "" || eta < 1);
 
 var prezzoTotale = kilometri * prezzoKm;
 var scontoMinorenni = kilometri * prezzoKm * 20 / 100;
